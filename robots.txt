@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /thank-you-bc96e9fad332
+Disallow: /thank-you-solarpunk-bc96e9fad332
+Disallow: /*.pdf$
+Sitemap: https://oldinkrecords.com/sitemap.xml
