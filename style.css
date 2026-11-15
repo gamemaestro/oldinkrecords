@@ -148,3 +148,5 @@ footer nav a:hover{color:var(--gold-soft)}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 .item .art img{filter:none}
 .item .art .plate,.item .art{color:var(--cream)}
+
+.item[hidden]{display:none}
