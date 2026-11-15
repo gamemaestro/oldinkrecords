@@ -125,6 +125,15 @@ footer nav a:hover{color:var(--gold-soft)}
 .series{list-style:none;margin:6px 0 10px;padding:0;border-top:1px solid var(--hair)}
 .series li{display:flex;flex-wrap:wrap;gap:4px 16px;align-items:baseline;padding:10px 0;border-bottom:1px solid var(--hair);font-size:16px;color:var(--cream-dim)}
 .series span{font-family:var(--display);font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--cream);min-width:11ch}
+/* Homepage feature */
+.feature-grid{display:grid;grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr);gap:56px;align-items:center}
+.feature-cover img{border-radius:6px;box-shadow:0 20px 60px rgba(0,0,0,.5),0 0 0 1px var(--hair);display:block}
+.feature-copy{display:flex;flex-direction:column;gap:12px;min-width:0}
+.feature-copy h2{margin:0}
+.feature-copy p{margin:0}
+.feature-sub{font-style:italic;font-size:20px;color:var(--cream)}
+.feature .buy{margin:10px 0 0}
+@media (max-width:860px){.feature-grid{grid-template-columns:1fr;gap:28px}.feature-cover{max-width:320px;margin:0 auto}}
 @media (max-width:860px){
   .watch-grid{grid-template-columns:1fr;gap:32px}
 }
