@@ -150,3 +150,7 @@ footer nav a:hover{color:var(--gold-soft)}
 .item .art .plate,.item .art{color:var(--cream)}
 
 .item[hidden]{display:none}
+.screen img.thumb{width:100%;height:100%;object-fit:cover;opacity:1;filter:none}
+.screen .play{background:rgba(20,18,16,.55)}
+.screen img.thumb ~ .play{position:absolute;right:18px;bottom:16px;width:60px;height:60px}
+.screen img.thumb ~ .play::after{left:24px;top:18px;border-left-width:17px;border-top-width:12px;border-bottom-width:12px}
