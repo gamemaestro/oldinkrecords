@@ -6,8 +6,10 @@ const EMAIL = /^[^\s@]{1,64}@[^\s@]{1,253}\.[^\s@]{2,}$/;
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
-    if (url.pathname === "/subscribe" && request.method === "POST") {
-      return subscribe(request, env, url);
+    if (url.pathname === "/subscribe") {
+      if (request.method !== "POST") return Response.redirect(new URL("/#letters", url.origin).toString(), 303);
+      try { return await subscribe(request, env, url); }
+      catch { return Response.redirect(new URL("/subscribe-error", url.origin).toString(), 303); }
     }
     return env.ASSETS.fetch(request);
   },
