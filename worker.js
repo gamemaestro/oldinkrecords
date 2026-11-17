@@ -17,22 +17,28 @@ export default {
 
 async function subscribe(request, env, url) {
   const done = (path) => Response.redirect(new URL(path, url.origin).toString(), 303);
+  const fail = (code) => done("/subscribe-error?r=" + code);
   let form;
-  try { form = await request.formData(); } catch { return done("/subscribe-error"); }
+  try { form = await request.formData(); } catch { return fail("form"); }
   if ((form.get("website") || "").toString().trim() !== "") return done("/subscribed"); // bot trap
   const email = (form.get("email") || "").toString().trim().toLowerCase();
   const source = (form.get("source") || "site").toString().slice(0, 40);
-  if (!EMAIL.test(email) || email.length > 254) return done("/subscribe-error");
-  if (!env.SHEET_URL || !env.SHEET_TOKEN) return done("/subscribe-error");
+  if (!EMAIL.test(email) || email.length > 254) return fail("email");
+  if (!env.SHEET_URL) return fail("no-url");
+  if (!env.SHEET_TOKEN) return fail("no-token");
+  let res, text;
   try {
-    const res = await fetch(env.SHEET_URL, {
+    res = await fetch(env.SHEET_URL.trim(), {
       method: "POST",
       headers: { "content-type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams({ token: env.SHEET_TOKEN, email, source }).toString(),
+      body: new URLSearchParams({ token: env.SHEET_TOKEN.trim(), email, source }).toString(),
       redirect: "follow",
     });
-    const text = await res.text();
-    if (!res.ok || !text.includes('"ok":true')) return done("/subscribe-error");
-  } catch { return done("/subscribe-error"); }
-  return done("/subscribed");
+    text = await res.text();
+  } catch { return fail("network"); }
+  if (text.includes('"ok":true')) return done("/subscribed");
+  if (text.includes('unauthorized')) return fail("token");
+  if (text.includes('"ok":false')) return fail("rejected");
+  if (/<html/i.test(text)) return fail("google-" + res.status);
+  return fail("status-" + res.status);
 }
