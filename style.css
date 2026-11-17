@@ -152,8 +152,9 @@ footer nav a:hover{color:var(--gold-soft)}
 .item[hidden]{display:none}
 .screen img.thumb{width:100%;height:100%;object-fit:cover;opacity:1;filter:none}
 .screen .play{background:rgba(20,18,16,.55)}
-.screen img.thumb ~ .play{position:absolute;right:18px;bottom:16px;width:60px;height:60px}
-.screen img.thumb ~ .play::after{left:24px;top:18px;border-left-width:17px;border-top-width:12px;border-bottom-width:12px}
+.screen img.thumb ~ .play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:84px;height:84px}
+.screen img.thumb ~ .play::after{left:34px;top:26px}
+@media (max-width:600px){.screen img.thumb ~ .play{width:64px;height:64px}.screen img.thumb ~ .play::after{left:26px;top:20px;border-left-width:17px;border-top-width:12px;border-bottom-width:12px}}
 
 /* Email signup */
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
