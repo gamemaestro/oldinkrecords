@@ -164,3 +164,4 @@ footer nav a:hover{color:var(--gold-soft)}
 .signup input[type=email]:focus-visible{outline:2px solid var(--gold-soft);outline-offset:2px}
 .signup button{cursor:pointer}
 .hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+section[hidden]{display:none}
