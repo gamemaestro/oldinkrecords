@@ -187,3 +187,22 @@ dl.inside dd{margin:2px 0 0}
 .phone-island{position:absolute;top:22px;left:50%;width:30%;height:22px;transform:translateX(-50%);border-radius:12px;background:#0b0b0b}
 @keyframes phone-scroll{0%,22%{transform:translateY(0)}40%,78%{transform:translateY(-33.42%)}96%,100%{transform:translateY(0)}}
 @media (prefers-reduced-motion:reduce){.phone-screen img{animation:none}}
+
+/* Mobile first pass (Nov 18): get the offer on the first screen, larger labels */
+.buybar{display:none}
+@media (max-width:600px){
+  .bar nav a{font-size:14px;letter-spacing:.16em}
+  .product .cover{max-width:170px;margin:0 auto;display:block}
+  .product{gap:22px}
+  .product h1{font-size:28px}
+  .product .meta{font-size:13.5px;gap:6px 16px}
+  .feature-cover{max-width:240px}
+  .filters button{font-size:13.5px}
+  .hero .wrap{padding-block:64px 56px}
+  .buybar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:20;align-items:center;justify-content:space-between;gap:14px;padding:10px max(16px,env(safe-area-inset-right,0px)) calc(10px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px));background:rgba(17,16,15,.96);border-top:1px solid var(--hair);transform:translateY(110%);transition:transform .25s ease}
+  .buybar.show{transform:none}
+  .buybar span{font-family:var(--display);font-size:13.5px;letter-spacing:.1em;color:var(--cream);line-height:1.3}
+  .buybar .btn{min-height:44px;white-space:nowrap}
+  body.has-buybar{padding-bottom:76px}
+}
+footer .pub{min-height:44px}
