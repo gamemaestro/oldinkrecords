@@ -9,6 +9,8 @@ Old Ink Records believes record keeping is a sacred human act. It publishes Hist
 - [The Library](https://oldinkrecords.com/library-and-scriptorium): publications and videos
 - [Solarpunk: A History of the Movement](https://oldinkrecords.com/solarpunk-a-history-of-the-movement-ebook): 14-page PDF, $7
 - [Newsroom](https://oldinkrecords.com/newsroom)
+- [Manifesto](https://oldinkrecords.com/manifesto): what Old Ink Records believes
+- [Creation Policy](https://oldinkrecords.com/creation-policy): how works are made and how AI use is disclosed
 
 ## Contact
 - info@oldinkrecords.com
