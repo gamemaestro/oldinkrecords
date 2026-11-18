@@ -178,3 +178,4 @@ dl.inside dd{margin:2px 0 0}
 .faq{display:grid;gap:6px}
 .faq h3{font-size:16px;margin-top:14px}
 .faq p{margin:0}
+.stack{width:100%;max-width:560px;height:auto;display:block;margin:0 auto;filter:drop-shadow(0 20px 40px rgba(0,0,0,.35))}
