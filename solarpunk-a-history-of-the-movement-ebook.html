@@ -82,7 +82,7 @@
 }
 </script>
 <link rel="stylesheet" href="/fonts/fonts.css">
-<link rel="stylesheet" href="/style.css?v=3">
+<link rel="stylesheet" href="/style.css?v=4">
 </head>
 <body>
 <header class="bar">
@@ -176,6 +176,9 @@
     </div>
   </section>
 </main>
+<div class="buybar" aria-hidden="true"><span>The e-book · $7</span><a class="btn" href="https://buy.stripe.com/fZu5kDcVuglm77ZcV50Ba02" tabindex="-1">Buy the e-Book</a></div>
+<script>(function(){var b=document.querySelector('.buybar'),t=document.querySelector('.product .buy');if(!b||!t||!('IntersectionObserver' in window))return;document.body.classList.add('has-buybar');new IntersectionObserver(function(e){var past=!e[0].isIntersecting&&e[0].boundingClientRect.top<0;b.classList.toggle('show',past);b.setAttribute('aria-hidden',past?'false':'true');b.querySelector('a').tabIndex=past?0:-1;}).observe(t);})();</script>
+
 <footer>
   <div class="wrap">
     <a class="pub" href="/"><img src="/old-ink-mark.png" width="36" height="36" alt="">Old Ink Records</a>
