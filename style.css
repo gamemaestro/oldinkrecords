@@ -206,3 +206,6 @@ dl.inside dd{margin:2px 0 0}
   body.has-buybar{padding-bottom:76px}
 }
 footer .pub{min-height:44px}
+@media (max-width:600px){.hero h1{font-size:clamp(44px,13.4vw,58px);letter-spacing:.06em}}
+.btn-row{display:flex;flex-wrap:wrap;gap:14px 22px;align-items:center}
+[hidden]{display:none!important}
