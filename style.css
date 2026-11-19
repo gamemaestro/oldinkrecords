@@ -192,6 +192,8 @@ dl.inside dd{margin:2px 0 0}
 .buybar{display:none}
 @media (max-width:600px){
   .bar nav a{font-size:14px;letter-spacing:.16em}
+  .bar .wrap{flex-direction:column;justify-content:center;gap:0;padding-block:8px 4px}
+  .bar nav{justify-content:center}
   .product .cover{max-width:170px;margin:0 auto;display:block}
   .product{gap:22px}
   .product h1{font-size:28px}
