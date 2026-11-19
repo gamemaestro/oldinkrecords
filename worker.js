@@ -28,13 +28,25 @@ async function subscribe(request, env, url) {
   if (!env.SHEET_TOKEN) return fail("no-token");
   let res, text;
   try {
+    // Apps Script answers a POST with a 302 to script.googleusercontent.com; follow it by hand
+    // so an error code can say which hop failed (google-403 = script.google.com, echo-403 = the redirect).
     res = await fetch(env.SHEET_URL.trim(), {
       method: "POST",
-      headers: { "content-type": "application/x-www-form-urlencoded" },
+      headers: { "content-type": "application/x-www-form-urlencoded", "user-agent": "OldInkRecords-Signup/1.0" },
       body: new URLSearchParams({ token: env.SHEET_TOKEN.trim(), email, source }).toString(),
-      redirect: "follow",
+      redirect: "manual",
     });
+    let hop = "google";
+    const loc = res.headers.get("location");
+    if (res.status >= 300 && res.status < 400 && loc) {
+      hop = "echo";
+      res = await fetch(loc, { method: "GET", headers: { "user-agent": "OldInkRecords-Signup/1.0" }, redirect: "follow" });
+    }
     text = await res.text();
+    if (/<html/i.test(text) && !text.includes('"ok"')) {
+      const signin = /accounts\.google\.com|ServiceLogin/i.test(text) ? "-signin" : "";
+      return fail(hop + "-" + res.status + signin);
+    }
   } catch { return fail("network"); }
   if (text.includes('"ok":true')) return done("/subscribed");
   if (text.includes('unauthorized')) return fail("token");
