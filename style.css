@@ -209,3 +209,26 @@ footer .pub{min-height:44px}
 @media (max-width:600px){.hero h1{font-size:clamp(44px,13.4vw,58px);letter-spacing:.06em}}
 .btn-row{display:flex;flex-wrap:wrap;gap:14px 22px;align-items:center}
 [hidden]{display:none!important}
+
+/* Articles (Nov 19): long-form evergreen pages in the Library */
+article.essay{padding-block:48px 80px}
+article.essay h1{font-size:clamp(30px,5vw,48px);text-align:left;letter-spacing:.05em;margin:10px 0 14px}
+article.essay .sub{font-style:italic;font-size:clamp(19px,2.2vw,22px);color:var(--cream-dim);margin:0 0 28px;text-wrap:pretty}
+article.essay h2{font-size:clamp(19px,2.4vw,22px);margin:40px 0 10px}
+article.essay p{text-wrap:pretty}
+article.essay .lead{font-size:clamp(20px,2.4vw,23px);line-height:1.55;color:var(--cream)}
+article.essay figure{margin:32px 0}
+article.essay figure img{display:block;width:100%;height:auto;border-radius:12px;box-shadow:0 0 0 1px var(--hair),0 18px 50px rgba(0,0,0,.4)}
+article.essay figure.hero-art{margin:8px 0 32px}
+article.essay figure.portrait img{max-width:340px;margin:0 auto}
+article.essay figcaption{margin-top:10px;font-size:15px;font-style:italic;color:var(--cream-dim);text-align:center}
+article.essay .timeline{padding-left:1.1em;display:grid;gap:10px}
+article.essay .thanks{font-size:22px;color:var(--gold-soft)}
+.essay-cta{margin:48px 0 8px;padding:28px 26px;border:1px solid var(--hair);border-radius:14px;background:radial-gradient(ellipse at 50% 0%,rgba(201,169,110,.14),transparent 70%),var(--card);text-align:center}
+.essay-cta p{margin:12px 0 0}
+.essay-cta .btn{margin-top:6px}
+.sources{padding-block:0;margin-top:40px}
+.sources ol{padding-left:1.3em;font-size:16px;color:var(--cream-dim);display:grid;gap:6px}
+.made{margin-top:28px;font-size:15px;color:var(--cream-dim)}
+.byline{font-style:italic;color:var(--cream-dim)}
+.articles .item .art{aspect-ratio:3/2}
