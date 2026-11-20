@@ -84,12 +84,25 @@
      "item": "https://oldinkrecords.com/what-is-solarpunk"
     }
    ]
+  },
+  {
+   "@type": "VideoObject",
+   "name": "What Is Solarpunk? The Hopeful Movement Born in California",
+   "description": "Old Ink Records traces solarpunk from Octavia E. Butler's California to a 2008 blog post, a Brazilian anthology, Tumblr, and the global movement of today, and explains what solarpunk believes and what solarpunk worldbuilding looks like.",
+   "thumbnailUrl": "https://oldinkrecords.com/video-what-is-solarpunk.webp",
+   "uploadDate": "2026-11-19",
+   "duration": "PT7M36S",
+   "contentUrl": "https://www.youtube.com/watch?v=MXLh_k3G8jM",
+   "embedUrl": "https://www.youtube-nocookie.com/embed/MXLh_k3G8jM",
+   "publisher": {
+    "@id": "https://oldinkrecords.com/#organization"
+   }
   }
  ]
 }
 </script>
 <link rel="stylesheet" href="/fonts/fonts.css">
-<link rel="stylesheet" href="/style.css?v=6">
+<link rel="stylesheet" href="/style.css?v=7">
 </head>
 <body>
 <header class="bar">
@@ -108,7 +121,13 @@
     <div class="eyebrow" style="margin-top:12px">Histories · <time datetime="2026-11-19">November 19, 2026</time></div>
     <h1>What Is Solarpunk?</h1>
     <p class="sub">Rejecting dystopia. Choosing optimism. A plain-language guide to the movement, where the word came from, and what it believes.</p>
-    <figure class="hero-art"><img src="/article-what-is-solarpunk.webp" width="1200" height="800" alt="A rooftop garden with solar panels overlooking a green solarpunk city at golden hour" fetchpriority="high"></figure>
+    <figure class="hero-art video">
+      <button type="button" class="yt" data-id="MXLh_k3G8jM" aria-label="Play the video: What Is Solarpunk? The Hopeful Movement Born in California">
+        <img src="/video-what-is-solarpunk.webp" width="1280" height="720" alt="A gardener tending a rooftop garden above a green solarpunk city at golden hour" fetchpriority="high">
+        <span class="play" aria-hidden="true"></span>
+      </button>
+      <figcaption>Watch: What Is Solarpunk? The Hopeful Movement Born in California (7:36). <a href="https://www.youtube.com/watch?v=MXLh_k3G8jM" rel="noopener">Open on YouTube</a></figcaption>
+    </figure>
     <p class="lead">Solarpunk is a creative movement in fiction, art, design, and everyday life that imagines a sustainable, just, and beautiful future and asks people to start building it now.</p>
     <p>For a long time, the future we were shown was mostly a warning: collapsing cities, surveillance, machines turned against us. Solarpunk answers with a different question. What does a future worth living in actually look like, in detail, and what can we do today to move toward it?</p>
     <h2>What the word means</h2>
@@ -171,5 +190,15 @@
   </div>
 </footer>
 <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "e1ec19a78f3d4326ba168d7692701b38"}'></script><!-- End Cloudflare Web Analytics -->
+<script>
+document.querySelectorAll('.yt').forEach(function(b){b.addEventListener('click',function(){
+  var f=document.createElement('iframe');
+  f.src='https://www.youtube-nocookie.com/embed/'+b.dataset.id+'?autoplay=1&rel=0';
+  f.title=b.getAttribute('aria-label').replace('Play the video: ','');
+  f.allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen';
+  f.allowFullscreen=true;f.setAttribute('referrerpolicy','strict-origin-when-cross-origin');
+  b.replaceWith(f);
+});});
+</script>
 </body>
 </html>
