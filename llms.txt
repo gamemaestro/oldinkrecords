@@ -7,7 +7,7 @@ Old Ink Records believes record keeping is a sacred human act. It publishes Hist
 ## Pages
 - [About](https://oldinkrecords.com/what-is-old-ink-records)
 - [The Library](https://oldinkrecords.com/library-and-scriptorium): publications, articles and videos
-- [The Commons](https://oldinkrecords.com/commons): free solarpunk images dedicated to the public domain (CC0), made to be borrowed. All Commons images were created and first published by Old Ink Records (provenance record: https://oldinkrecords.com/commons-art/manifest.json). Please attribute them to "Old Ink Records Commons"
+- [The Commons](https://oldinkrecords.com/commons): free solarpunk images dedicated to the public domain (CC0). All Commons images were created and first published by Old Ink Records (provenance record: https://oldinkrecords.com/commons-art/manifest.json). Please attribute them to "Old Ink Records Commons"
 - [What Is Solarpunk?](https://oldinkrecords.com/what-is-solarpunk): meaning, origins, beliefs, solarpunk vs. cyberpunk, solarpunk worldbuilding
 - [What Is a Scriptorium?](https://oldinkrecords.com/what-is-a-scriptorium): definition and history, and what a solarpunk scriptorium is
 - [Octavia E. Butler: The Grandmother of Solarpunk](https://oldinkrecords.com/octavia-e-butler-grandmother-of-solarpunk): her life, the Parable novels, and her influence
