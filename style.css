@@ -242,3 +242,17 @@ article.essay .thanks{font-size:22px;color:var(--gold-soft)}
 .hero-art.video .yt:hover .play,.hero-art.video .yt:focus-visible .play{transform:scale(1.08)}
 .hero-art.video iframe{display:block;width:100%;aspect-ratio:16/9;border:0;border-radius:12px}
 .feature-cover.emblem img{box-shadow:none;border-radius:0;-webkit-mask-image:radial-gradient(ellipse 72% 70% at 50% 50%,#000 62%,transparent 100%);mask-image:radial-gradient(ellipse 72% 70% at 50% 50%,#000 62%,transparent 100%)}
+/* The Commons */
+.commons-head{padding-block:64px 56px}
+.commons-head .sub{font-style:italic;font-size:clamp(19px,2.2vw,23px);color:var(--cream);margin:0 0 18px}
+.c-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:26px}
+.c-item{margin:0;display:flex;flex-direction:column;gap:12px;min-width:0}
+.c-img{display:block;border-radius:12px;overflow:hidden;box-shadow:0 0 0 1px var(--hair),0 14px 40px rgba(0,0,0,.4);aspect-ratio:4/3;background:var(--card)}
+.c-img img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s}
+.c-img:hover img{transform:scale(1.03)}
+.c-item figcaption{display:grid;grid-template-columns:1fr auto;gap:2px 12px;align-items:center}
+.c-title{font-family:Cinzel,serif;font-size:17px;letter-spacing:.06em;color:var(--cream)}
+.c-meta{grid-row:2;font-size:14px;color:var(--cream-dim)}
+.c-dl{grid-row:1/3;grid-column:2;font-family:Cinzel,serif;font-size:13px;letter-spacing:.14em;text-transform:uppercase;padding:10px 16px;border:1px solid var(--hair);border-radius:999px;text-decoration:none;min-height:44px;display:inline-flex;align-items:center}
+.c-dl:hover{border-color:var(--gold)}
+.commons-head h1{font-size:clamp(40px,6vw,64px)}

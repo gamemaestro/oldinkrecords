@@ -1,0 +1,92 @@
+{
+ "collection": "Old Ink Records Commons, Vol. 1: Solarpunk Images",
+ "publisher": "Old Ink Records",
+ "publisher_url": "https://oldinkrecords.com",
+ "page": "https://oldinkrecords.com/commons",
+ "first_published": "2026-11-20",
+ "license": "CC0 1.0 Universal",
+ "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+ "made_with": "AI image tools, each image chosen and reviewed by a person",
+ "files": [
+  {
+   "title": "Rooftop Garden",
+   "file": "solarpunk-rooftop-garden.jpg",
+   "url": "https://oldinkrecords.com/commons-art/solarpunk-rooftop-garden.jpg",
+   "width": 1024,
+   "height": 1024,
+   "sha256": "45bf801ff2e2e40bac3d156b334b2bc27cabad7d7edb3c659c03fbb34cb31428"
+  },
+  {
+   "title": "The Festival",
+   "file": "solarpunk-festival.jpg",
+   "url": "https://oldinkrecords.com/commons-art/solarpunk-festival.jpg",
+   "width": 1024,
+   "height": 1024,
+   "sha256": "a77847bf12a533bd42cb395ca21976f9b594e3f4466338e364a537b94e9587d6"
+  },
+  {
+   "title": "Solarpunk Supper",
+   "file": "solarpunk-supper.jpg",
+   "url": "https://oldinkrecords.com/commons-art/solarpunk-supper.jpg",
+   "width": 1344,
+   "height": 752,
+   "sha256": "d24b1c2fc5e2ae195ddbe018e142fcee3f41b9fef6ee879c3fd48d374cda6f53"
+  },
+  {
+   "title": "The Green City",
+   "file": "solarpunk-green-city.jpg",
+   "url": "https://oldinkrecords.com/commons-art/solarpunk-green-city.jpg",
+   "width": 1024,
+   "height": 1024,
+   "sha256": "345e04a4990040f82c6bae008b557b582600a2755078c45916e8e4be618bdbf2"
+  },
+  {
+   "title": "The Scribe’s Desk",
+   "file": "solarpunk-scribe-desk.jpg",
+   "url": "https://oldinkrecords.com/commons-art/solarpunk-scribe-desk.jpg",
+   "width": 1024,
+   "height": 1024,
+   "sha256": "2385759ffad7f24f3ea49a6958b1dcdb3cfd65339094fe93fc723a2e00f66764"
+  },
+  {
+   "title": "New Growth",
+   "file": "solarpunk-new-growth.jpg",
+   "url": "https://oldinkrecords.com/commons-art/solarpunk-new-growth.jpg",
+   "width": 1024,
+   "height": 1024,
+   "sha256": "17ce0fffd60b19b3da331e68c3a7c7ac4cd787eec584694b30a8315d22cc0448"
+  },
+  {
+   "title": "California Valley",
+   "file": "solarpunk-california-valley.jpg",
+   "url": "https://oldinkrecords.com/commons-art/solarpunk-california-valley.jpg",
+   "width": 1344,
+   "height": 576,
+   "sha256": "cf544d0e8d82a07c03b2a22457ff7aaa4cb46253de9256447e16430623b2c776"
+  },
+  {
+   "title": "Coastal City (banner)",
+   "file": "solarpunk-coastal-city.jpg",
+   "url": "https://oldinkrecords.com/commons-art/solarpunk-coastal-city.jpg",
+   "width": 1180,
+   "height": 390,
+   "sha256": "675a65da818a6e5c069090f37d8ab03b655041924a280e53750d3cafb3bf821c"
+  },
+  {
+   "title": "Dream Clouds",
+   "file": "dream-clouds.jpg",
+   "url": "https://oldinkrecords.com/commons-art/dream-clouds.jpg",
+   "width": 1344,
+   "height": 752,
+   "sha256": "b49a8ac0812e65da8eea95eeab90f0a42cdd5c7dc9420f9911810c3c3c2aa154"
+  },
+  {
+   "title": "Earth at the Threshold",
+   "file": "earth-at-the-threshold.jpg",
+   "url": "https://oldinkrecords.com/commons-art/earth-at-the-threshold.jpg",
+   "width": 1344,
+   "height": 752,
+   "sha256": "aeffbe8af8c96afe5de6cc81514cef290f1f4bdd77c571b4965dcd3494b9c465"
+  }
+ ]
+}

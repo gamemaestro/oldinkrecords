@@ -86,12 +86,13 @@
 </header>
 <main>
   <div class="page-head"><div class="wrap"><div class="eyebrow">Old Ink Records</div><h1>The Library</h1><p class="subhead">Every record we keep, in one place</p></div></div>
-  <section id="articles">
+  <section id="articles"><span id="commons" aria-hidden="true"></span>
     <div class="wrap">
       <div class="filters" role="group" aria-label="Filter the Library">
         <button type="button" data-f="all" aria-pressed="true">All</button>
         <button type="button" data-f="ebooks" aria-pressed="false">E-books</button>
         <button type="button" data-f="articles" aria-pressed="false">Articles</button>
+        <button type="button" data-f="commons" aria-pressed="false">Commons</button>
       </div>
       <div class="shelf" id="shelf" aria-live="polite">
         <article class="item" data-cat="ebooks">
@@ -139,6 +140,15 @@
             <div class="foot"><a class="btn" href="/manifesto">Read</a></div>
           </div>
         </article>
+        <article class="item" data-cat="commons">
+          <div class="art"><a href="/commons" tabindex="-1" aria-hidden="true" style="display:block;width:100%;height:100%"><img src="/commons-art/solarpunk-festival-thumb.webp" width="900" height="900" alt="A solarpunk community festival among gardens and solar canopies" loading="lazy"></a></div>
+          <div class="in">
+            <span class="kind">Commons · Free · CC0</span>
+            <h3><a href="/commons" style="color:inherit;text-decoration:none">The Commons, Vol. 1: Solarpunk Images</a></h3>
+            <p>Ten illustrations made to be borrowed. Free to use for anything, no permission needed.</p>
+            <div class="foot"><a class="btn" href="/commons">Browse and Download</a></div>
+          </div>
+        </article>
         <article class="item" data-cat="videos" data-hold hidden>
           <div class="art"><a href="https://www.youtube.com/@oldinkrecords" rel="noopener" style="display:block;width:100%;height:100%"><img src="/library-watch.jpg" width="1200" height="900" alt="The Old Ink Records scriptorium: a candlelit library of open books beside arched windows looking out on a solarpunk city" loading="lazy" style="width:100%;height:100%;object-fit:cover"></a></div>
           <div class="in">
@@ -163,7 +173,7 @@
     });
   }
   btns.forEach(function(b){b.addEventListener('click',function(){show(b.dataset.f)})});
-  function fromHash(){var h=location.hash.replace('#','');if(h==='articles'||h==='ebooks')show(h)}
+  function fromHash(){var h=location.hash.replace('#','');if(h==='articles'||h==='ebooks'||h==='commons')show(h)}
   window.addEventListener('hashchange',fromHash);fromHash();
 })();
 </script>
